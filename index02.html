@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    let numberN = [];
+    let x = null;
+    let numberM = prompt("so trong mang ");
+    for (let i = 0 ; i < numberM ; i ++) {
+        x = prompt("nhap so");
+        numberN[i] = x;
+    }
+    for (let i = 0; i < numberN.length; i++) {
+        if (numberN[i] % 2 === 0 && numberN[i + 1] % 2 === 0) {
+            document.write(numberN[i] + '-')
+        } else {
+            document.write(numberN[i])
+        }
+    }
+
+
+</script>
+</body>
+</html>
